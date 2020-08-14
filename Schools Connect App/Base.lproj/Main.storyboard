@@ -40,20 +40,20 @@
                                     <segue destination="UxA-vF-O3J" kind="show" id="7Bs-vt-9to"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saL-GU-xYo">
-                                <rect key="frame" x="338" y="748" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="student"/>
-                                <connections>
-                                    <segue destination="d1g-DP-uki" kind="show" id="VPM-EL-j0X"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxv-dt-Lu2">
                                 <rect key="frame" x="96" y="746" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="inbox"/>
                                 <connections>
                                     <segue destination="rEo-DF-wjY" kind="show" id="LsR-Of-ASu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saL-GU-xYo">
+                                <rect key="frame" x="334" y="748" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="student"/>
+                                <connections>
+                                    <segue destination="d1g-DP-uki" kind="show" id="VPM-EL-j0X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -115,15 +115,15 @@
                                 <rect key="frame" x="16" y="87" width="337" height="633"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cq6-Rx-hk6">
-                                <rect key="frame" x="107" y="31" width="272" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dm" translatesAutoresizingMaskIntoConstraints="NO" id="MwN-My-PcB">
                                 <rect key="frame" x="20" y="31" width="65" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cq6-Rx-hk6">
+                                <rect key="frame" x="96" y="43" width="272" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cQg-XG-E2E"/>
@@ -183,11 +183,6 @@
                                 <rect key="frame" x="-8" y="117" width="406" height="607"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evi-Ng-vL8">
-                                <rect key="frame" x="121" y="38" width="273" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="student" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-XY-ftF">
                                 <rect key="frame" x="36" y="29" width="65" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -203,6 +198,11 @@
                                     <segue destination="Qxy-y6-snI" kind="show" id="iFQ-j7-w0E"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evi-Ng-vL8">
+                                <rect key="frame" x="111" y="38" width="273" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hg9-Ie-RJK"/>
@@ -424,10 +424,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iFQ-j7-w0E"/>
         <segue reference="QXH-NT-8uR"/>
         <segue reference="xg9-4w-Gjn"/>
-        <segue reference="D3h-md-AvB"/>
+        <segue reference="zd1-GV-hW9"/>
         <segue reference="d2P-fr-LvP"/>
         <segue reference="HBB-n4-bze"/>
     </inferredMetricsTieBreakers>
